@@ -707,7 +707,7 @@ async function get_ChainID() {
       window.chainID = "Kovan Test Network";
       break;
     default:
-      window.chainID = "EDU ChainID";
+      window.chainID = "EDU Chain ChainID";
       break;
   }
   let network = document.getElementById("network");
