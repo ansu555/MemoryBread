@@ -3,7 +3,7 @@ const projectId = "28LuNAotbXzcvtpOcE9F8ayKOeP";
 //Your api secret in ifura.io
 const projectSecret = "3de3d9c099c6c0c168e39b8bc03e2f7a";
 window.CONTRACT = {
-  address: "0x4671643D57Dcd800b0294c219f053dB617eBDA55",
+  address: "0x35C9d173A60F25CEAefEFCCf6f31Da8ad945F5D6",
   network: "https://rpc.open-campus-codex.gelato.digital",
   explore: "https://opencampus-codex.blockscout.com/",
   // Your Contract ABI
