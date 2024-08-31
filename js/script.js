@@ -37,6 +37,5 @@ function changeBackground(){
       document.querySelector(".home").style = ` background-image: url( ${bgs[index]})`;
     }, 10000);
     
-    
-    
     }
+
