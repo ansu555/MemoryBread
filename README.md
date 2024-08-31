@@ -1,53 +1,52 @@
-# BlockChain-Based Document Verification with IPFS
+# Decentralized Document Verification System Using Blockchain and IPFS
 
-This project aims to create a secure and decentralized system for document verification using Blockchain and InterPlanetary File System (IPFS) technologies. The system stores the hash of the documents in the Blockchain network and the documents themselves in the IPFS network. This ensures that the documents cannot be tampered with or altered, and they can be easily retrieved and verified by authorized parties.
+This project introduces a secure and decentralized approach for document verification, leveraging the strengths of Blockchain and InterPlanetary File System (IPFS) technologies. By storing document hashes on the Blockchain and the documents themselves on IPFS, the system guarantees that documents remain immutable and can be reliably retrieved and authenticated by authorized users.
 
-## Features
+## Key Features
 
-- Secure document verification using Blockchain and IPFS technologies
-- Decentralized system, with no central authority or single point of failure
-- Fast and easy verification process, with no need for intermediaries or third-party services
-- User-friendly interface for document upload and verification
-- Support for multiple document types and formats
+- Secure and Immutable Verification: Utilizes Blockchain and IPFS to create a tamper-proof environment for document verification.
+- Decentralized Architecture: Eliminates single points of failure by distributing data and verification processes across a decentralized network.
+- Efficient Verification Process: Enables quick and reliable document verification without the need for intermediaries.
+- User-Friendly Interface: Provides an intuitive interface for uploading, storing, and verifying documents.
+- Support for Diverse Document Types: Compatible with multiple formats and document types to cater to a wide range of verification needs.
 
-## Requirements
+## System Requirements
 
-- Node.js and npm installed on your system
-- MetaMask Wallet
-- IPFS API (key and secret) you can get it from infura.io
-
+- Node.js and npm installed on your machine
+- MetaMask Wallet for blockchain interactions
+- IPFS API Credentials (API key and secret) available from Infura.io
+  
 ## Installation
 
 1. Clone this repository: 
-   ``https://github.com/DevAloshe/BlockChain-Based-Document-Verfication-With-IPFS.git``
+   
 
 
 2. Install the required packages:
   ``cd BlockChain-Based-Document-Verfication-With-IPFS``
   `` npm install``
 
-4. deploy the contract.sol using remixe online ide
-   after the deployment complete copy the contract address from remix and paste it in the app.js contract address field
-   you also need to specify the network url and the network explorer url you are working on ( you can get them from       metamask network settings)
+## Deploy Smart Contract:
+- Use Remix IDE to deploy contract.sol.
+- Copy the deployed contract address and update the contractAddress field in app.js.
+- Set the appropriate network URL and explorer URL from MetaMask settings.
    
-5. Open the application in your browser using Live Server Extension .
-6. if you need to view the actual documents you have to create new infura account at ``infura.io`` and use the api id and secret provided by infura and paste them in the app.js where is the uploadToInfura function
+## How to Use
 
-## Usage
+1. Add Authorized Exporter:
+- The system administrator must add exporters by entering their MetaMask address through the "Add Exporter" interface.
+  
+2. Upload a Document:
+- Click "Upload Document" and select the desired file from your device. The document will be securely stored in IPFS, with its hash recorded on the Blockchain.
 
-1. The owner of the system must first add an exporter to the list of authorized parties. This is done by clicking on the "Add Exporter" button and entering the exporter's Metamask address.
-2. Upload a document to the system by clicking on the "Upload Document" button and selecting a file from your computer. The document will be encrypted and stored in the IPFS network, and its hash will be recorded in the Blockchain.
+3. Verify a Document:
+- Use the "Verify Document" option to select and verify a document. The system will retrieve and validate the document, ensuring it matches the stored hash on the Blockchain.
 
-3. Verify a document by clicking on the "Verify Document" button and choose the document and click verify button. The system will retrieve the document from the IPFS network, decrypt it, and compare its hash with the one recorded in the Blockchain.
+4. Authenticity Confirmation:
+- The system will confirm whether the document is authentic, ensuring it has not been tampered with.
 
-4. The system will display a message indicating whether the document is authentic or not.
+## Light Papaer -> https://drive.google.com/file/d/1I5iFOBDjCkuxDTvny-P_cEvLxaD7MdcQ/view?usp=share_link
 
-
-## Acknowledgments
-- Metamask documentation
-- Solidity and Web3.js documentation
-- IPFS documentation
-- Truffle documentation
 
 
 
